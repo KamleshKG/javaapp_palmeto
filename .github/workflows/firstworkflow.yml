@@ -17,7 +17,6 @@ jobs:
         run: |
           echo "Running on: ${{ runner.os }}"
           echo "Runner name: ${{ runner.name }}"
-          echo "Runner version: ${{ runner.version }}"
           echo  "GitHub event: ${{ github.event_name }}"
           echo "GitHub workspace: ${{ github.workspace }}"
           echo "GitHub repository: ${{ github.repository }}"
@@ -32,7 +31,6 @@ jobs:
           echo "GitHub workspace: ${{ github.workspace }}"
           echo "GitHub action: ${{ github.action }}"
           echo "GitHub event: ${{ github.event_name }}"
-          echo "GitHub event time: ${{ github.event_time }}"
           echo "GitHub event: ${{ github.event_name }}"
       - name: List installed tools
         run: |
