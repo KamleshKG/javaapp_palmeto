@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build Job
-    runs-on: ubunturunner
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -34,4 +34,29 @@ jobs:
           echo "GitHub event: ${{ github.event_name }}"
           echo "GitHub event time: ${{ github.event_time }}"
           echo "GitHub event: ${{ github.event_name }}"
-            
+      - name: List installed tools
+        run: |
+          echo "Listing installed tools on the runner:"
+          echo "Node.js version:"
+          node --version || echo "Node.js not found"
+          echo "Python version:"
+          python --version || echo "Python not found"
+          echo "Java version:"
+          java -version || echo "Java not found"
+          echo "Docker version:"
+          docker --version || echo "Docker not found"
+          echo "Git version:"
+          git --version || echo "Git not found"
+          echo "npm version:"
+          npm --version || echo "npm not found"
+          echo "yarn version:"
+          yarn --version || echo "Yarn not found"
+          echo "Ruby version:"
+          ruby --version || echo "Ruby not found"
+          echo "Go version:"
+          go version || echo "Go not found".
+          echo "PHP version:"
+          php --version || echo "PHP not found"
+          echo "Rust version:"
+          rustc --version || echo "Rust not found"
+          echo "Dotnet version:"
