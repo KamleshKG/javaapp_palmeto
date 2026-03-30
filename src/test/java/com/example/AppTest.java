@@ -10,3 +10,4 @@ public class AppTest {
         App app = new App();
         assertEquals(8, app.add(5, 3));
     }
+}
