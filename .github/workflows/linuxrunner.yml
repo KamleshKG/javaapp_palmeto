@@ -1,5 +1,3 @@
-filename: linuxrunner.yml
-
 name: Java Build + Coverage (Linux)
 
 on:
