@@ -46,7 +46,7 @@ jobs:
 
       - name: Set lowercase image name
         run: |
-          echo "IMAGE_NAME=$(echo \"$GITHUB_REPOSITORY\" | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          printf 'IMAGE_NAME=%s\n' "$(echo "$GITHUB_REPOSITORY" | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_ENV"
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
