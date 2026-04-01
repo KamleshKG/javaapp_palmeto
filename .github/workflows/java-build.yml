@@ -1,0 +1,48 @@
+name: Reusable Java Build & Test
+
+on:
+  workflow_call:
+    inputs:
+      java-version:
+        description: 'Java version'
+        required: false
+        type: string
+        default: '17'
+      maven-goals:
+        description: 'Maven goals'
+        required: false
+        type: string
+        default: 'clean package -B'
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ inputs.java-version }}
+          cache: 'maven'
+
+      - name: Build and Test
+        run: mvn ${{ inputs.maven-goals }}
+
+      - name: Publish Test Report
+        uses: dorny/test-reporter@v3
+        if: always()
+        with:
+          name: JUnit Tests
+          path: target/surefire-reports/*.xml
+          reporter: java-junit
+
+      - name: Upload JAR Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: java-app-jar
+          path: target/*.jar
+          retention-days: 30
