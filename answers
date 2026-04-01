@@ -1,0 +1,165 @@
+
+
+BOA - GitHub & GitHub Actions
+Post Assessment
+Training Dates:26,27,30,31 Mar & 1st Apr'26
+When you submit this form, it will not automatically collect your details like name and email address unless you provide it yourself.
+Required
+1.Your name
+Kamlesh Gangaramani
+2.Which container registry is natively integrated with GitHub for storing Docker images?
+(2 Points)
+
+A) Docker Hub (hub.docker.com)
+
+B) Amazon ECR
+
+C) GitHub Container Registry
+
+D) Azure Container Registry
+3.Which event trigger is most appropriate for creating automated GitHub Releases?
+(2 Points)
+
+A) on: push to main branch
+
+B) on: push with tags: ['v*']
+
+C) on: pull_request merged
+
+D) on: schedule with weekly cron
+4.What is required to run Selenium browser tests in GitHub Actions?
+(2 Points)
+
+A) Paid GitHub Enterprise with GPU
+
+B) Headless browser configured
+
+C) VNC server
+
+D) Physical display runner
+5.What type of code analysis does SonarQube/SonarCloud perform?
+(2 Points)
+
+A) DAST
+
+B) Static code analysis
+
+C) Container scanning
+
+D) Pen testing
+6.What type of security analysis does GitHub CodeQL perform?
+(2 Points)
+
+A) Runtime monitoring
+
+B) Network scanning
+
+C) Semantic code analysis (SAST)
+
+D) License compliance
+7.What does Trivy scan for when analyzing a Docker container image?
+(2 Points)
+
+A) Dockerfile syntax
+
+B) OS & dependency vulnerabilities
+
+C) Ports only
+
+D) Performance metrics
+8.Difference between baseline scan and full scan?
+(2 Points)
+
+A) Baseline deeper
+
+B) Passive vs Active
+
+C) Source vs runtime
+
+D) No difference
+9.First step in Bitbucket to GitHub migration?
+(2 Points)
+
+A) Move all repos
+
+B) Inventory analysis
+
+C) Delete all
+
+D) Install GHES
+10.GitHub Actions equivalent of Jenkins Shared Libraries?
+(2 Points)
+
+A) Packages
+
+B) Templates
+
+C) Reusable workflows & composite actions
+
+D) Gists
+11.Equivalent of 'agent { label "linux" }'?
+(2 Points)
+
+A) runner: linux
+
+B) runs-on: ubuntu-latest
+
+C) container: linux
+
+D) os: linux-latest
+12.Recommended migration strategy?
+(2 Points)
+
+A) Shut Jenkins
+
+B) Run both in parallel
+
+C) Split usage
+
+D) Only new projects
+13.Types of custom GitHub Actions?
+(2 Points)
+
+A) Shell/Python/Ruby
+
+B) Composite/JS/Docker
+
+C) YAML/JSON/XML
+
+D) CLI/API/Webhook
+14.Trigger type for reusable workflow?
+(2 Points)
+
+A) workflow_dispatch
+
+B) workflow_call
+
+C) workflow_reuse
+
+D) workflow_import
+15.What does SLSA provenance provide?
+(2 Points)
+
+A) Performance metrics
+
+B) Tamper-proof CI/CD record
+
+C) License scanning
+
+D) Network config
+16.DORA elite deployment frequency?
+(2 Points)
+
+A) Monthly
+
+B) Weekly
+
+C) On-demand (multiple/day)
+
+D) Quarterly
+Submit
+Never give out your password.Report abuse
+Microsoft 365
+This content is created by the owner of the form. The data you submit will be sent to the form owner. Microsoft is not responsible for the privacy or security practices of its customers, including those of this form owner. Never give out your password.
+Microsoft Forms | AI-Powered surveys, quizzes and pollsCreate my own form
+The owner of this form has not provided a privacy statement as to how they will use your response data. Do not provide personal or sensitive information. | Terms of use
